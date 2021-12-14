@@ -1,101 +1,56 @@
 body {
-    margin: 0;
+    background-color: #F3F4FD;
 }
 
-* {
-    font-family: 'Satoshi', sans-serif;
-    margin: 0;
-}
-
-@media only screen and (max-width: 728px) {
-    .content {
-        margin-right: 5%;
-        margin-left: 5%;
-    }
-    .hero {  
-        width: 100%;
-        height: 70vh;
-        text-align: center;
-    }
-    .hero .hero-inner {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%
-    }
-    .hero-btn {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 729px) {
-    .content {
-        margin-right: 20%;
-        margin-left: 20%;
-    }
-    .hero {  
-        width: 100%;
-        height: 550px;
-        max-height: 500px;
-        transition: max-height 0.4s cubic-bezier(.175,.885,.32,1.275);
-    }
-    .hero:hover {
-        height: 1000px;
-        max-height: 550px;
-    }
-    .hero .hero-inner {
-        position: absolute;
-        top: 250px;
-        left: 40px;
-        transform: translateY(-50%);
-    }
-    .hero:hover .hero-btn {
-        transform: translateY(50px);
-    }
-
-    .hero-btn:hover {
-        padding: 30px;
-        padding-left: 30px;
-        padding-right: 30px; 
-    }
-
-    .hero-btn {
-        display: inline-block;
-        padding: 10px;
-        padding-left: 30px;
-        padding-right: 30px;
-        margin-top: 20px;
-        background-color: white;
-        border-radius: 16px;
-        color: black;
-        transform: translateY(0px);
-        transition: transform 0.4s cubic-bezier(.175,.885,.32,1.275), padding 0.4s cubic-bezier(.175,.885,.32,1.275);
-        user-select: none;
-    }
-}
 .header {
-    height: 20px;
-    padding-top: 30px;
-    padding-bottom: 15px;
-    border-bottom: solid 2px rgba(0,0,0,0.05);
+    padding-top: 1px;
+    background: url(/images/grain.png) center/150px fixed repeat, url(/images/beam.png) right center no-repeat;
 }
 
-.header-inner {
+.la-box > h1 {
+    margin: 0;
+}
+.la-box {
+    margin-top: 20%;
+    padding-bottom: 70px;
+}
+
+.qualitiesBox {
+    margin-top: 25px;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    gap: 20px;
+}
+
+.qualitiesBox > .item { 
+    width: 100px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
-
-.hero {
-    background: linear-gradient(90deg, #FF512F 0%, #DD2476 100%);
-    border-radius: 10px;
-    margin-top: 20px;
-    color: white;
-    position: relative;
+.qualitiesBox > .item > img { 
+    height: 55px;
+}
+.qualitiesBox > .item > p { 
+    margin: 0;
+    margin-top: 10px;
+    font-size: 18px;
+    color: rgba(0,0,0,0.7);
 }
 
-.hero-two {
+.title {
     text-align: center;
-    margin-top: 40px;
+}
+.section {
+    margin-top: 50px;
+}
+
+.noUnd {
+    text-decoration: none;
+}
+
+.socialPromo {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
 }
