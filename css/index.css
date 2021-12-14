@@ -22,6 +22,12 @@ body {
     gap: 20px;
 }
 
+@media only screen and (max-width: 768px) {
+    .qualitiesBox {
+        justify-content: center;
+    }
+}
+
 .qualitiesBox > .item { 
     width: 100px;
     display: flex;
@@ -36,6 +42,7 @@ body {
     margin-top: 10px;
     font-size: 18px;
     color: rgba(0,0,0,0.7);
+    text-align: center;
 }
 
 .title {
