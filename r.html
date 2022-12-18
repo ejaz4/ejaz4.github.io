@@ -6,7 +6,7 @@
   <body>
     <script>
       const t = new URL(window.location).searchParams.get('t');
-      if (t) location.replace(t)
+      if (t) location.replace(atob(t))
       else location.replace("/")
     </script>
   </body>
